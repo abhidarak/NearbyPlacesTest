@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SugarboxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aX-va-Lbz">
+                                <rect key="frame" x="20" y="318.5" width="374" height="259"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5h-AR-Xsi">
+                                        <rect key="frame" x="126" y="29" width="122" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="FAh-mV-0PB"/>
+                                            <constraint firstAttribute="width" constant="122" id="wcl-zu-5iv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capturing location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxC-Vq-6ha">
+                                        <rect key="frame" x="41" y="107" width="292" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="VWv-Ki-yE2"/>
+                                            <constraint firstAttribute="width" constant="292" id="mMm-fS-379"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading nearby restaurants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5O5-Jp-tUu">
+                                        <rect key="frame" x="41" y="139" width="292" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="5pa-Np-cNg"/>
+                                            <constraint firstAttribute="width" constant="292" id="Rbv-z8-HzN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yxC-Vq-6ha" firstAttribute="centerX" secondItem="5aX-va-Lbz" secondAttribute="centerX" id="DYK-jD-6Wj"/>
+                                    <constraint firstItem="A5h-AR-Xsi" firstAttribute="centerX" secondItem="5aX-va-Lbz" secondAttribute="centerX" id="DeX-Ef-GXl"/>
+                                    <constraint firstItem="yxC-Vq-6ha" firstAttribute="top" secondItem="A5h-AR-Xsi" secondAttribute="bottom" constant="44" id="J2L-OQ-Ud2"/>
+                                    <constraint firstItem="5O5-Jp-tUu" firstAttribute="centerX" secondItem="5aX-va-Lbz" secondAttribute="centerX" id="WnG-2p-acA"/>
+                                    <constraint firstItem="A5h-AR-Xsi" firstAttribute="top" secondItem="5aX-va-Lbz" secondAttribute="top" constant="29" id="Zo4-Fe-n2n"/>
+                                    <constraint firstItem="5O5-Jp-tUu" firstAttribute="top" secondItem="yxC-Vq-6ha" secondAttribute="bottom" constant="8" id="a4g-8K-8lR"/>
+                                    <constraint firstAttribute="height" constant="259" id="lWb-DG-0CA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5aX-va-Lbz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ByQ-nU-3Zc"/>
+                            <constraint firstItem="5aX-va-Lbz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KhU-DF-XvC"/>
+                            <constraint firstItem="5aX-va-Lbz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y2Q-PV-ddi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5aX-va-Lbz" secondAttribute="trailing" constant="20" id="uaF-rD-B1J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>

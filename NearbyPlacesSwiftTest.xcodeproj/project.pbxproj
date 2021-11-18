@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		913FDABC153C3805A83272DE /* Pods_NearbyPlacesSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E4A5BE66342DAE3D2A11A0 /* Pods_NearbyPlacesSwiftTest.framework */; };
+		A136E413259C493F00473E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E412259C493F00473E9D /* AppDelegate.swift */; };
+		A136E415259C493F00473E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E414259C493F00473E9D /* SceneDelegate.swift */; };
+		A136E417259C493F00473E9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E416259C493F00473E9D /* ViewController.swift */; };
+		A136E41A259C493F00473E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A136E418259C493F00473E9D /* Main.storyboard */; };
+		A136E41C259C494700473E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A136E41B259C494700473E9D /* Assets.xcassets */; };
+		A136E41F259C494700473E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A136E41D259C494700473E9D /* LaunchScreen.storyboard */; };
+		A136E432259C4BC400473E9D /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E42F259C4BC400473E9D /* RoundedCornerView.swift */; };
+		A136E433259C4BC400473E9D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E430259C4BC400473E9D /* Strings.swift */; };
+		A136E434259C4BC400473E9D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E431259C4BC400473E9D /* Utility.swift */; };
+		A136E437259C6D1900473E9D /* RemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E436259C6D1900473E9D /* RemoteApi.swift */; };
+		A136E439259C70A400473E9D /* LocalDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E438259C70A400473E9D /* LocalDefaults.swift */; };
+		A136E43C259CDF4200473E9D /* NearbyRestaurantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E43A259CDF4200473E9D /* NearbyRestaurantsVC.swift */; };
+		A136E43D259CDF4200473E9D /* NearbyRestaurantsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A136E43B259CDF4200473E9D /* NearbyRestaurantsVC.xib */; };
+		A136E440259CE02D00473E9D /* NearbyRestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E43E259CE02D00473E9D /* NearbyRestaurantCell.swift */; };
+		A136E441259CE02D00473E9D /* NearbyRestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A136E43F259CE02D00473E9D /* NearbyRestaurantCell.xib */; };
+		A136E445259D7CC400473E9D /* MyExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E444259D7CC400473E9D /* MyExtentions.swift */; };
+		A136E44725A1781000473E9D /* VenueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E44625A1781000473E9D /* VenueDetail.swift */; };
+		A136E44925A17F5800473E9D /* NearbyRestaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136E44825A17F5800473E9D /* NearbyRestaurants.swift */; };
+		A154C4FC2746407900E4B8A1 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154C4FA2746407900E4B8A1 /* FilterTableViewCell.swift */; };
+		A154C4FD2746407900E4B8A1 /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154C4FB2746407900E4B8A1 /* FilterTableViewCell.xib */; };
+		A154C501274640AC00E4B8A1 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154C4FF274640AC00E4B8A1 /* FilterViewController.swift */; };
+		A154C502274640AC00E4B8A1 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154C500274640AC00E4B8A1 /* FilterViewController.xib */; };
+		A1579E1B25A86BF6007EDBF7 /* SQLiteDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1579E1A25A86BF6007EDBF7 /* SQLiteDBStore.swift */; };
+		A1579E1F25A86C96007EDBF7 /* DBSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1579E1E25A86C96007EDBF7 /* DBSchema.swift */; };
+		A1579E2125A86CD0007EDBF7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1579E2025A86CD0007EDBF7 /* Common.swift */; };
+		A1579E2325A86D0C007EDBF7 /* DataVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1579E2225A86D0C007EDBF7 /* DataVenue.swift */; };
+		A1579E2725A875E7007EDBF7 /* MyCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1579E2525A875E7007EDBF7 /* MyCoreDataModel.xcdatamodeld */; };
+		A1579E2925A8765F007EDBF7 /* CoreDataDBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1579E2825A8765F007EDBF7 /* CoreDataDBStore.swift */; };
+		A1DE20DB25A1B27C005283B9 /* RestaurantDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE20D925A1B27C005283B9 /* RestaurantDetailsVC.swift */; };
+		A1DE20DC25A1B27C005283B9 /* RestaurantDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20DA25A1B27C005283B9 /* RestaurantDetailsVC.xib */; };
+		A1DE20DE25A1B884005283B9 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20DD25A1B884005283B9 /* CustomView.xib */; };
+		A1DE20EB25A1E032005283B9 /* GothamRounded-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20DF25A1E030005283B9 /* GothamRounded-MediumItalic.otf */; };
+		A1DE20EC25A1E032005283B9 /* GothamRounded-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E025A1E030005283B9 /* GothamRounded-BookItalic.otf */; };
+		A1DE20ED25A1E032005283B9 /* GothamRoundedBook_21018.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E125A1E030005283B9 /* GothamRoundedBook_21018.ttf */; };
+		A1DE20EE25A1E032005283B9 /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E225A1E031005283B9 /* GothamRounded-Bold.otf */; };
+		A1DE20EF25A1E032005283B9 /* GothamRounded-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E325A1E031005283B9 /* GothamRounded-BoldItalic.otf */; };
+		A1DE20F025A1E032005283B9 /* GothamRoundedBold_21016.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E425A1E031005283B9 /* GothamRoundedBold_21016.ttf */; };
+		A1DE20F125A1E032005283B9 /* GothamRounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E525A1E031005283B9 /* GothamRounded-Light.otf */; };
+		A1DE20F225A1E032005283B9 /* GothamRoundedLight_21020.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E625A1E031005283B9 /* GothamRoundedLight_21020.ttf */; };
+		A1DE20F325A1E032005283B9 /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E725A1E031005283B9 /* GothamRounded-Book.otf */; };
+		A1DE20F425A1E032005283B9 /* GothamRoundedMedium_21022.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E825A1E031005283B9 /* GothamRoundedMedium_21022.ttf */; };
+		A1DE20F525A1E032005283B9 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20E925A1E031005283B9 /* GothamRounded-Medium.otf */; };
+		A1DE20F625A1E032005283B9 /* GothamRounded-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1DE20EA25A1E032005283B9 /* GothamRounded-LightItalic.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		065E8E2D36290DED1056EE44 /* Pods-SugarboxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarboxTest.debug.xcconfig"; path = "Target Support Files/Pods-SugarboxTest/Pods-SugarboxTest.debug.xcconfig"; sourceTree = "<group>"; };
+		20B296B8515CC012DF28B4B7 /* Pods-NearbyPlacesSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyPlacesSwiftTest.release.xcconfig"; path = "Target Support Files/Pods-NearbyPlacesSwiftTest/Pods-NearbyPlacesSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		A136E40F259C493F00473E9D /* NearbyPlacesSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyPlacesSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A136E412259C493F00473E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A136E414259C493F00473E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A136E416259C493F00473E9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A136E419259C493F00473E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A136E41B259C494700473E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A136E41E259C494700473E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A136E420259C494700473E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A136E42F259C4BC400473E9D /* RoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		A136E430259C4BC400473E9D /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A136E431259C4BC400473E9D /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A136E436259C6D1900473E9D /* RemoteApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteApi.swift; sourceTree = "<group>"; };
+		A136E438259C70A400473E9D /* LocalDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDefaults.swift; sourceTree = "<group>"; };
+		A136E43A259CDF4200473E9D /* NearbyRestaurantsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantsVC.swift; sourceTree = "<group>"; };
+		A136E43B259CDF4200473E9D /* NearbyRestaurantsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearbyRestaurantsVC.xib; sourceTree = "<group>"; };
+		A136E43E259CE02D00473E9D /* NearbyRestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurantCell.swift; sourceTree = "<group>"; };
+		A136E43F259CE02D00473E9D /* NearbyRestaurantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearbyRestaurantCell.xib; sourceTree = "<group>"; };
+		A136E444259D7CC400473E9D /* MyExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExtentions.swift; sourceTree = "<group>"; };
+		A136E44625A1781000473E9D /* VenueDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetail.swift; sourceTree = "<group>"; };
+		A136E44825A17F5800473E9D /* NearbyRestaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRestaurants.swift; sourceTree = "<group>"; };
+		A154C4FA2746407900E4B8A1 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		A154C4FB2746407900E4B8A1 /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
+		A154C4FF274640AC00E4B8A1 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		A154C500274640AC00E4B8A1 /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		A1579E1A25A86BF6007EDBF7 /* SQLiteDBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBStore.swift; sourceTree = "<group>"; };
+		A1579E1E25A86C96007EDBF7 /* DBSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSchema.swift; sourceTree = "<group>"; };
+		A1579E2025A86CD0007EDBF7 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A1579E2225A86D0C007EDBF7 /* DataVenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataVenue.swift; sourceTree = "<group>"; };
+		A1579E2625A875E7007EDBF7 /* MyCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A1579E2825A8765F007EDBF7 /* CoreDataDBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDBStore.swift; sourceTree = "<group>"; };
+		A1DE20D925A1B27C005283B9 /* RestaurantDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsVC.swift; sourceTree = "<group>"; };
+		A1DE20DA25A1B27C005283B9 /* RestaurantDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantDetailsVC.xib; sourceTree = "<group>"; };
+		A1DE20DD25A1B884005283B9 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		A1DE20DF25A1E030005283B9 /* GothamRounded-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-MediumItalic.otf"; sourceTree = "<group>"; };
+		A1DE20E025A1E030005283B9 /* GothamRounded-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-BookItalic.otf"; sourceTree = "<group>"; };
+		A1DE20E125A1E030005283B9 /* GothamRoundedBook_21018.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedBook_21018.ttf; sourceTree = "<group>"; };
+		A1DE20E225A1E031005283B9 /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
+		A1DE20E325A1E031005283B9 /* GothamRounded-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-BoldItalic.otf"; sourceTree = "<group>"; };
+		A1DE20E425A1E031005283B9 /* GothamRoundedBold_21016.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedBold_21016.ttf; sourceTree = "<group>"; };
+		A1DE20E525A1E031005283B9 /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Light.otf"; sourceTree = "<group>"; };
+		A1DE20E625A1E031005283B9 /* GothamRoundedLight_21020.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedLight_21020.ttf; sourceTree = "<group>"; };
+		A1DE20E725A1E031005283B9 /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
+		A1DE20E825A1E031005283B9 /* GothamRoundedMedium_21022.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamRoundedMedium_21022.ttf; sourceTree = "<group>"; };
+		A1DE20E925A1E031005283B9 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
+		A1DE20EA25A1E032005283B9 /* GothamRounded-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-LightItalic.otf"; sourceTree = "<group>"; };
+		A6580B6F1CDB971B53562D78 /* Pods-NearbyPlacesSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyPlacesSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-NearbyPlacesSwiftTest/Pods-NearbyPlacesSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D5E485F2B1CB64306C18FED5 /* Pods-SugarboxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarboxTest.release.xcconfig"; path = "Target Support Files/Pods-SugarboxTest/Pods-SugarboxTest.release.xcconfig"; sourceTree = "<group>"; };
+		F4E4A5BE66342DAE3D2A11A0 /* Pods_NearbyPlacesSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyPlacesSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A136E40C259C493F00473E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913FDABC153C3805A83272DE /* Pods_NearbyPlacesSwiftTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16BCD1E37670E36FB4B60EC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E4A5BE66342DAE3D2A11A0 /* Pods_NearbyPlacesSwiftTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		395DD889514862A7E47D8681 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				065E8E2D36290DED1056EE44 /* Pods-SugarboxTest.debug.xcconfig */,
+				D5E485F2B1CB64306C18FED5 /* Pods-SugarboxTest.release.xcconfig */,
+				A6580B6F1CDB971B53562D78 /* Pods-NearbyPlacesSwiftTest.debug.xcconfig */,
+				20B296B8515CC012DF28B4B7 /* Pods-NearbyPlacesSwiftTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A136E406259C493F00473E9D = {
+			isa = PBXGroup;
+			children = (
+				A136E411259C493F00473E9D /* NearbyPlacesSwiftTest */,
+				A136E410259C493F00473E9D /* Products */,
+				395DD889514862A7E47D8681 /* Pods */,
+				16BCD1E37670E36FB4B60EC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A136E410259C493F00473E9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A136E40F259C493F00473E9D /* NearbyPlacesSwiftTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A136E411259C493F00473E9D /* NearbyPlacesSwiftTest */ = {
+			isa = PBXGroup;
+			children = (
+				A1579E1725A86B20007EDBF7 /* DataLayer */,
+				A136E435259C6CF200473E9D /* Services */,
+				A136E42B259C4A9D00473E9D /* Include */,
+				A136E42A259C4A8700473E9D /* Res */,
+				A136E429259C4A1300473E9D /* CustomControllers */,
+				A136E428259C49E500473E9D /* Models */,
+				A136E427259C49D700473E9D /* Controllers */,
+				A136E426259C49CA00473E9D /* Views */,
+				A136E412259C493F00473E9D /* AppDelegate.swift */,
+				A136E414259C493F00473E9D /* SceneDelegate.swift */,
+				A136E416259C493F00473E9D /* ViewController.swift */,
+				A136E418259C493F00473E9D /* Main.storyboard */,
+				A136E41B259C494700473E9D /* Assets.xcassets */,
+				A136E41D259C494700473E9D /* LaunchScreen.storyboard */,
+				A136E420259C494700473E9D /* Info.plist */,
+			);
+			path = NearbyPlacesSwiftTest;
+			sourceTree = "<group>";
+		};
+		A136E426259C49CA00473E9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A136E43B259CDF4200473E9D /* NearbyRestaurantsVC.xib */,
+				A154C4FA2746407900E4B8A1 /* FilterTableViewCell.swift */,
+				A136E43F259CE02D00473E9D /* NearbyRestaurantCell.xib */,
+				A1DE20DA25A1B27C005283B9 /* RestaurantDetailsVC.xib */,
+				A1DE20DD25A1B884005283B9 /* CustomView.xib */,
+				A154C500274640AC00E4B8A1 /* FilterViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A136E427259C49D700473E9D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A136E43A259CDF4200473E9D /* NearbyRestaurantsVC.swift */,
+				A136E43E259CE02D00473E9D /* NearbyRestaurantCell.swift */,
+				A1DE20D925A1B27C005283B9 /* RestaurantDetailsVC.swift */,
+				A154C4FB2746407900E4B8A1 /* FilterTableViewCell.xib */,
+				A154C4FF274640AC00E4B8A1 /* FilterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A136E428259C49E500473E9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A136E44625A1781000473E9D /* VenueDetail.swift */,
+				A136E44825A17F5800473E9D /* NearbyRestaurants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A136E429259C4A1300473E9D /* CustomControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomControllers;
+			sourceTree = "<group>";
+		};
+		A136E42A259C4A8700473E9D /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				A136E42C259C4AFF00473E9D /* Fonts */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		A136E42B259C4A9D00473E9D /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				A136E42F259C4BC400473E9D /* RoundedCornerView.swift */,
+				A136E430259C4BC400473E9D /* Strings.swift */,
+				A136E431259C4BC400473E9D /* Utility.swift */,
+				A136E444259D7CC400473E9D /* MyExtentions.swift */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		A136E42C259C4AFF00473E9D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A1DE20E225A1E031005283B9 /* GothamRounded-Bold.otf */,
+				A1DE20E325A1E031005283B9 /* GothamRounded-BoldItalic.otf */,
+				A1DE20E725A1E031005283B9 /* GothamRounded-Book.otf */,
+				A1DE20E025A1E030005283B9 /* GothamRounded-BookItalic.otf */,
+				A1DE20E525A1E031005283B9 /* GothamRounded-Light.otf */,
+				A1DE20EA25A1E032005283B9 /* GothamRounded-LightItalic.otf */,
+				A1DE20E925A1E031005283B9 /* GothamRounded-Medium.otf */,
+				A1DE20DF25A1E030005283B9 /* GothamRounded-MediumItalic.otf */,
+				A1DE20E425A1E031005283B9 /* GothamRoundedBold_21016.ttf */,
+				A1DE20E125A1E030005283B9 /* GothamRoundedBook_21018.ttf */,
+				A1DE20E625A1E031005283B9 /* GothamRoundedLight_21020.ttf */,
+				A1DE20E825A1E031005283B9 /* GothamRoundedMedium_21022.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A136E435259C6CF200473E9D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A136E436259C6D1900473E9D /* RemoteApi.swift */,
+				A136E438259C70A400473E9D /* LocalDefaults.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1579E1725A86B20007EDBF7 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A1579E2425A875B8007EDBF7 /* CoreData */,
+				A1579E1925A86BDA007EDBF7 /* Data */,
+				A1579E2225A86D0C007EDBF7 /* DataVenue.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		A1579E1925A86BDA007EDBF7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A1579E1A25A86BF6007EDBF7 /* SQLiteDBStore.swift */,
+				A1579E1E25A86C96007EDBF7 /* DBSchema.swift */,
+				A1579E2025A86CD0007EDBF7 /* Common.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A1579E2425A875B8007EDBF7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A1579E2525A875E7007EDBF7 /* MyCoreDataModel.xcdatamodeld */,
+				A1579E2825A8765F007EDBF7 /* CoreDataDBStore.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A136E40E259C493F00473E9D /* NearbyPlacesSwiftTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A136E423259C494700473E9D /* Build configuration list for PBXNativeTarget "NearbyPlacesSwiftTest" */;
+			buildPhases = (
+				0599D820C9E7139DBFA84C8A /* [CP] Check Pods Manifest.lock */,
+				A177BF4925F9F1BE00391B1E /* Run Script */,
+				A136E40B259C493F00473E9D /* Sources */,
+				A136E40C259C493F00473E9D /* Frameworks */,
+				A136E40D259C493F00473E9D /* Resources */,
+				1ADAD78EF630F2F0330EECA7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearbyPlacesSwiftTest;
+			productName = SugarboxTest;
+			productReference = A136E40F259C493F00473E9D /* NearbyPlacesSwiftTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A136E407259C493F00473E9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Sugarbox;
+				TargetAttributes = {
+					A136E40E259C493F00473E9D = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A136E40A259C493F00473E9D /* Build configuration list for PBXProject "NearbyPlacesSwiftTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A136E406259C493F00473E9D;
+			productRefGroup = A136E410259C493F00473E9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A136E40E259C493F00473E9D /* NearbyPlacesSwiftTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A136E40D259C493F00473E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DE20EF25A1E032005283B9 /* GothamRounded-BoldItalic.otf in Resources */,
+				A1DE20EC25A1E032005283B9 /* GothamRounded-BookItalic.otf in Resources */,
+				A1DE20F225A1E032005283B9 /* GothamRoundedLight_21020.ttf in Resources */,
+				A1DE20DC25A1B27C005283B9 /* RestaurantDetailsVC.xib in Resources */,
+				A1DE20F425A1E032005283B9 /* GothamRoundedMedium_21022.ttf in Resources */,
+				A1DE20ED25A1E032005283B9 /* GothamRoundedBook_21018.ttf in Resources */,
+				A136E41F259C494700473E9D /* LaunchScreen.storyboard in Resources */,
+				A154C502274640AC00E4B8A1 /* FilterViewController.xib in Resources */,
+				A1DE20F625A1E032005283B9 /* GothamRounded-LightItalic.otf in Resources */,
+				A1DE20F325A1E032005283B9 /* GothamRounded-Book.otf in Resources */,
+				A1DE20EB25A1E032005283B9 /* GothamRounded-MediumItalic.otf in Resources */,
+				A136E441259CE02D00473E9D /* NearbyRestaurantCell.xib in Resources */,
+				A1DE20F025A1E032005283B9 /* GothamRoundedBold_21016.ttf in Resources */,
+				A136E41C259C494700473E9D /* Assets.xcassets in Resources */,
+				A154C4FD2746407900E4B8A1 /* FilterTableViewCell.xib in Resources */,
+				A1DE20F525A1E032005283B9 /* GothamRounded-Medium.otf in Resources */,
+				A136E43D259CDF4200473E9D /* NearbyRestaurantsVC.xib in Resources */,
+				A1DE20F125A1E032005283B9 /* GothamRounded-Light.otf in Resources */,
+				A1DE20EE25A1E032005283B9 /* GothamRounded-Bold.otf in Resources */,
+				A136E41A259C493F00473E9D /* Main.storyboard in Resources */,
+				A1DE20DE25A1B884005283B9 /* CustomView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0599D820C9E7139DBFA84C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearbyPlacesSwiftTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ADAD78EF630F2F0330EECA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyPlacesSwiftTest/Pods-NearbyPlacesSwiftTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NearbyPlacesSwiftTest/Pods-NearbyPlacesSwiftTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyPlacesSwiftTest/Pods-NearbyPlacesSwiftTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A177BF4925F9F1BE00391B1E /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A136E40B259C493F00473E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1579E2125A86CD0007EDBF7 /* Common.swift in Sources */,
+				A136E437259C6D1900473E9D /* RemoteApi.swift in Sources */,
+				A1579E2925A8765F007EDBF7 /* CoreDataDBStore.swift in Sources */,
+				A1579E2725A875E7007EDBF7 /* MyCoreDataModel.xcdatamodeld in Sources */,
+				A136E44725A1781000473E9D /* VenueDetail.swift in Sources */,
+				A136E439259C70A400473E9D /* LocalDefaults.swift in Sources */,
+				A136E434259C4BC400473E9D /* Utility.swift in Sources */,
+				A1579E1F25A86C96007EDBF7 /* DBSchema.swift in Sources */,
+				A136E432259C4BC400473E9D /* RoundedCornerView.swift in Sources */,
+				A1579E1B25A86BF6007EDBF7 /* SQLiteDBStore.swift in Sources */,
+				A136E445259D7CC400473E9D /* MyExtentions.swift in Sources */,
+				A1579E2325A86D0C007EDBF7 /* DataVenue.swift in Sources */,
+				A154C4FC2746407900E4B8A1 /* FilterTableViewCell.swift in Sources */,
+				A136E417259C493F00473E9D /* ViewController.swift in Sources */,
+				A136E43C259CDF4200473E9D /* NearbyRestaurantsVC.swift in Sources */,
+				A136E413259C493F00473E9D /* AppDelegate.swift in Sources */,
+				A154C501274640AC00E4B8A1 /* FilterViewController.swift in Sources */,
+				A136E440259CE02D00473E9D /* NearbyRestaurantCell.swift in Sources */,
+				A136E415259C493F00473E9D /* SceneDelegate.swift in Sources */,
+				A136E433259C4BC400473E9D /* Strings.swift in Sources */,
+				A1DE20DB25A1B27C005283B9 /* RestaurantDetailsVC.swift in Sources */,
+				A136E44925A17F5800473E9D /* NearbyRestaurants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A136E418259C493F00473E9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A136E419259C493F00473E9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A136E41D259C494700473E9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A136E41E259C494700473E9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A136E421259C494700473E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A136E422259C494700473E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A136E424259C494700473E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6580B6F1CDB971B53562D78 /* Pods-NearbyPlacesSwiftTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4G65L987DK;
+				INFOPLIST_FILE = NearbyPlacesSwiftTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugarbox.test.SugarboxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A136E425259C494700473E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20B296B8515CC012DF28B4B7 /* Pods-NearbyPlacesSwiftTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NearbyPlacesSwiftTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugarbox.test.SugarboxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A136E40A259C493F00473E9D /* Build configuration list for PBXProject "NearbyPlacesSwiftTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A136E421259C494700473E9D /* Debug */,
+				A136E422259C494700473E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A136E423259C494700473E9D /* Build configuration list for PBXNativeTarget "NearbyPlacesSwiftTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A136E424259C494700473E9D /* Debug */,
+				A136E425259C494700473E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1579E2525A875E7007EDBF7 /* MyCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1579E2625A875E7007EDBF7 /* MyCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = A1579E2625A875E7007EDBF7 /* MyCoreDataModel.xcdatamodel */;
+			path = MyCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A136E407259C493F00473E9D /* Project object */;
+}

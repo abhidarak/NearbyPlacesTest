@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+        <array key="GothamRoundedBold_21016.ttf">
+            <string>GothamRounded-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearbyRestaurantsVC" customModule="SugarboxTest" customModuleProvider="target">
+            <connections>
+                <outlet property="cityLbl" destination="Qos-S3-Q7x" id="ics-IW-sg7"/>
+                <outlet property="nearbyRestaurantsTable" destination="5Ib-NW-bx7" id="2FO-jo-fW0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESTAURANTS NEARBY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHe-Na-QkA">
+                    <rect key="frame" x="20" y="128" width="318" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="318" id="LOD-ct-tGw"/>
+                        <constraint firstAttribute="height" constant="21" id="QU7-hi-jL5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="20"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qos-S3-Q7x">
+                    <rect key="frame" x="55" y="70" width="248" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="248" id="0ul-xW-rRK"/>
+                        <constraint firstAttribute="height" constant="21" id="Ct2-DK-s7v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
+                    <color key="textColor" red="0.1803921568627451" green="0.21176470588235294" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ib-NW-bx7">
+                    <rect key="frame" x="0.0" y="169" width="414" height="727"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="czu-l5-kUd"/>
+                        <outlet property="delegate" destination="-1" id="zLN-eW-YLl"/>
+                    </connections>
+                </tableView>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDK-kN-BJd">
+                    <rect key="frame" x="0.0" y="107" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.1803921568627451" green="0.21176470588235294" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Up4-Ua-tH5"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_icon" translatesAutoresizingMaskIntoConstraints="NO" id="CSj-jV-qmb">
+                    <rect key="frame" x="20" y="68" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="F54-tj-jbu"/>
+                        <constraint firstAttribute="width" constant="25" id="eCj-5F-zU1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BHe-Na-QkA" firstAttribute="top" secondItem="rDK-kN-BJd" secondAttribute="bottom" constant="20" id="0rk-lN-jfa"/>
+                <constraint firstItem="Qos-S3-Q7x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="26" id="AGP-9Y-QBi"/>
+                <constraint firstItem="BHe-Na-QkA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Dgx-Fu-v5Z"/>
+                <constraint firstAttribute="bottom" secondItem="5Ib-NW-bx7" secondAttribute="bottom" id="G7u-t2-UiY"/>
+                <constraint firstAttribute="trailing" secondItem="rDK-kN-BJd" secondAttribute="trailing" id="OCf-u2-ohZ"/>
+                <constraint firstItem="rDK-kN-BJd" firstAttribute="top" secondItem="CSj-jV-qmb" secondAttribute="bottom" constant="14" id="PUe-RY-RcK"/>
+                <constraint firstItem="CSj-jV-qmb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QeP-VQ-rcx"/>
+                <constraint firstItem="5Ib-NW-bx7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YPR-Qp-ETx"/>
+                <constraint firstItem="5Ib-NW-bx7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aP6-Kp-Yc9"/>
+                <constraint firstItem="5Ib-NW-bx7" firstAttribute="top" secondItem="BHe-Na-QkA" secondAttribute="bottom" constant="20" id="aiA-V6-pyP"/>
+                <constraint firstItem="CSj-jV-qmb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="gim-73-2hk"/>
+                <constraint firstItem="Qos-S3-Q7x" firstAttribute="leading" secondItem="CSj-jV-qmb" secondAttribute="trailing" constant="10" id="pIv-s6-RtP"/>
+                <constraint firstItem="rDK-kN-BJd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yfM-7n-l37"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location_icon" width="18.5" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_NearbyPlacesSwiftTest {
+  umbrella header "Pods-NearbyPlacesSwiftTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
